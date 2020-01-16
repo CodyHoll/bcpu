@@ -23,7 +23,7 @@ if p3 != 0:
         # if denum is greater
         p5 = p2
         # if num is greater
-        while(p2 >= p3): 
+        while(p2 >= p3):
             p4 = p4 + 1
             p2 = p2 - p3
             p5 = p2
@@ -139,7 +139,7 @@ Movez(pc, r10, r3)
         # jump to end (which is r12)
         Add(pc,pc,r12)
 
-    #>endif3 
+    #>endif3
     # -------- CODE r2 neg, r3 neg -----
     Move(r5, r2)
 
@@ -160,11 +160,14 @@ Movez(pc, r10, r3)
 """
 
 
-# HERE IS WHERE YOU CHANGE INPUT (r2 AND r3)
+# THIS IS WHERE YOU CHANGE INPUT VALUES
 Set(r2, 9)
 #Sub(r2,r0,r2)
 Set(r3, 2)
 #Sub(r3,r0,r3)
+
+print("### Don't forget to Set r2 and r3 values in the source code before running the program! ###\n")
+
 load(div, fname='div')
 runfast()
 
