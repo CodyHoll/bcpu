@@ -6,9 +6,16 @@
 # div p4 = p2/p3
 from bcpu import *
 
+# use python to find intended results
+# -5//2 = -3
+# -5//-2 = 2
+# -5%-2 = -1
+#-4/3 = -1 ,with remainder of -1
+
+
 # input
-p2 = -9
-p3 = 2
+p2 = -5
+p3 = -2
 
 p4 = 7
 p5 = 4
@@ -129,4 +136,4 @@ Move(r4, r4)
 Move(r5, r5)
 """
 
-start(div2)
+#start(div2)

@@ -28,9 +28,6 @@ def mulp(p2:int, p3:int)->'p4:int':
 
 # assembly language code
 mul = """
-#Set(r2, 2)
-#Subi(r2, r2, 4)
-#Set(r3, 3)
 
 #>mul(r2,r3)->p4
 
@@ -69,7 +66,6 @@ Movep(pc, r10, r2)        # goto endwhile if r2 >= 0
     Subi(pc, pc, ?while2)
 
 #>endwhile2
-Move(r4,r4) # simulate print
 
 """
 #--------------- Syntax for running the file/function -----------------
